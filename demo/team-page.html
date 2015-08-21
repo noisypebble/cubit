@@ -1,0 +1,52 @@
+<link rel="import" href="../../polymer/polymer.html">
+<link rel="import" href="../cubit-tile.html">
+
+<dom-module id="customer-page">
+
+  <link rel="import" type="css" href="shared.css">
+
+  <style>
+    .logo {
+      width: 100%;
+    }
+  </style>
+
+  <template>
+
+    <cubit-grid>
+
+      <template is="dom-repeat" items="[[customers]]">
+        <cubit-tile>
+          <img class="logo" alt="[[item.name]]" src="[[item.logo]]">
+        </cubit-tile>
+      </template>
+
+    </cubit-grid>
+
+  </template>
+
+</dom-module>
+
+<script>
+
+  Polymer({
+
+    is: 'customer-page',
+
+    properties: {
+      customers: {
+        type: Array,
+        value: function() {
+          return [
+            {id: 'fake1', name: 'Fake 1', logo: 'img/fake1-logo.png'},
+            {id: 'fake2', name: 'Fake 2', logo: 'img/fake2-logo.png'},
+            {id: 'fake3', name: 'Fake 3', logo: 'img/fake3-logo.png'},
+            {id: 'fake4', name: 'Fake 4', logo: 'img/fake4-logo.png'}
+          ]
+        }
+      }
+    }
+
+  });
+
+</script>

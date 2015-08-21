@@ -1,0 +1,47 @@
+<link rel="import" href="../../polymer/polymer.html">
+<link rel="import" href="../cubit-tile.html">
+
+<dom-module id="team-page">
+
+  <link rel="import" type="css" href="shared.css">
+
+  <style>
+  </style>
+
+  <template>
+
+    <cubit-grid>
+
+      <template is="dom-repeat" items="[[customers]]">
+        <cubit-tile>
+          <span>[[item.name]]</span>
+        </cubit-tile>
+      </template>
+
+    </cubit-grid>
+
+  </template>
+
+</dom-module>
+
+<script>
+
+  Polymer({
+
+    is: 'customer-page',
+
+    properties: {
+      teams: {
+        type: Array,
+        value: function() {
+          return [
+            {id: 'team-a', name: 'Team A'},
+            {id: 'team-b', name: 'Team B'}
+          ]
+        }
+      }
+    }
+
+  });
+
+</script>

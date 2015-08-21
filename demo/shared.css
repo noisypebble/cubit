@@ -1,0 +1,21 @@
+.cubit-grid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cubit-tile {
+    width: 100px;
+    height: 100px;
+    display: block;
+    border: 1px solid black;
+    float: left;
+    vertical-align: middle;
+    text-align: center;
+    margin: 2px;
+}
+
+.cubit-tile span {
+  vertical-align: middle;
+}

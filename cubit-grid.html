@@ -1,0 +1,39 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<dom-module id="cubit-grid">
+
+  <style>
+
+    :host {
+      display: block;
+      position: relative;
+    }
+
+    .grid {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+  </style>
+
+  <template>
+    <div class="grid">
+      <content id="content"></content>
+    </div>
+  </template>
+
+</dom-module>
+
+<script>
+(function() {
+
+  Polymer({
+
+    is: 'cubit-grid'
+
+  });
+
+})();
+</script>

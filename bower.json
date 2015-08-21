@@ -1,0 +1,17 @@
+{
+  "name": "cubit",
+  "version": "0.0.0",
+  "homepage": "https://github.com/noisypebble/cubit",
+  "authors": [
+    "noisypebble <noisypebble@toyatech.net>"
+  ],
+  "description": "A web component for displaying hierarchical data in a two dimensional grid.",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
